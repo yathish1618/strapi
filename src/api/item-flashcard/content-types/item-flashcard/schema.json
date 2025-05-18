@@ -4,14 +4,19 @@
   "info": {
     "singularName": "item-flashcard",
     "pluralName": "item-flashcards",
-    "displayName": "ItemFlashcard"
+    "displayName": "ItemFlashcard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "letter": { "type": "string", "required": true },
-    "hint": { "type": "text" },
+    "letter": {
+      "type": "string"
+    },
+    "hint": {
+      "type": "text"
+    },
     "level_links": {
       "type": "relation",
       "relation": "oneToMany",

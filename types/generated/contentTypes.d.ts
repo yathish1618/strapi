@@ -373,6 +373,7 @@ export interface ApiItemFlashcardItemFlashcard
   extends Struct.CollectionTypeSchema {
   collectionName: 'item_flashcards';
   info: {
+    description: '';
     displayName: 'ItemFlashcard';
     pluralName: 'item-flashcards';
     singularName: 'item-flashcard';
@@ -385,7 +386,7 @@ export interface ApiItemFlashcardItemFlashcard
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     hint: Schema.Attribute.Text;
-    letter: Schema.Attribute.String & Schema.Attribute.Required;
+    letter: Schema.Attribute.String;
     level_links: Schema.Attribute.Relation<
       'oneToMany',
       'api::level-item-link.level-item-link'
@@ -407,6 +408,7 @@ export interface ApiLevelItemLinkLevelItemLink
   extends Struct.CollectionTypeSchema {
   collectionName: 'level_item_links';
   info: {
+    description: '';
     displayName: 'LevelItemLink';
     pluralName: 'level-item-links';
     singularName: 'level-item-link';
@@ -440,6 +442,7 @@ export interface ApiLevelItemLinkLevelItemLink
 export interface ApiLevelLevel extends Struct.CollectionTypeSchema {
   collectionName: 'levels';
   info: {
+    description: '';
     displayName: 'Level';
     pluralName: 'levels';
     singularName: 'level';
@@ -462,7 +465,7 @@ export interface ApiLevelLevel extends Struct.CollectionTypeSchema {
     module: Schema.Attribute.Relation<'manyToOne', 'api::module.module'>;
     order: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -494,7 +497,7 @@ export interface ApiModuleModule extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     order: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

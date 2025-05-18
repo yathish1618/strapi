@@ -22,10 +22,10 @@
     },
     "module": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::module.module"
     },
-    "item_links": {
+    "level_item_links": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::level-item-link.level-item-link"

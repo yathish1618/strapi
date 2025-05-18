@@ -1,29 +1,26 @@
 {
   "kind": "collectionType",
-  "collectionName": "modules",
+  "collectionName": "item_flashcards",
   "info": {
-    "singularName": "module",
-    "pluralName": "modules",
-    "displayName": "Module",
+    "singularName": "item-flashcard",
+    "pluralName": "item-flashcards",
+    "displayName": "ItemFlashcard",
     "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "letter": {
       "type": "string"
     },
-    "description": {
+    "hint": {
       "type": "text"
     },
-    "order": {
-      "type": "integer"
-    },
-    "levels": {
+    "level_item_links": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::level.level"
+      "target": "api::level-item-link.level-item-link"
     }
   }
 }

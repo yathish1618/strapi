@@ -14,15 +14,15 @@
     "order": {
       "type": "integer"
     },
-    "level": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::level.level"
-    },
     "item_flashcard": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::item-flashcard.item-flashcard"
+    },
+    "level": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::level.level"
     }
   }
 }
