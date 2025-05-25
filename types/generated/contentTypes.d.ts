@@ -382,6 +382,7 @@ export interface ApiItemFlashcardItemFlashcard
     draftAndPublish: true;
   };
   attributes: {
+    audio: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
