@@ -29,6 +29,15 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::level-item-link.level-item-link"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "learn",
+        "practice",
+        "quiz",
+        "checkpoint"
+      ]
     }
   }
 }

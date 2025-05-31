@@ -24,6 +24,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::level.level"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
