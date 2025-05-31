@@ -12,7 +12,7 @@
   },
   "attributes": {
     "order": {
-      "type": "integer"
+      "type": "decimal"
     },
     "level": {
       "type": "relation",

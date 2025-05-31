@@ -18,7 +18,7 @@
       "type": "text"
     },
     "order": {
-      "type": "integer"
+      "type": "decimal"
     },
     "levels": {
       "type": "relation",
@@ -26,14 +26,15 @@
       "target": "api::level.level"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

@@ -432,7 +432,7 @@ export interface ApiLevelItemLinkLevelItemLink
       'api::level-item-link.level-item-link'
     > &
       Schema.Attribute.Private;
-    order: Schema.Attribute.Integer;
+    order: Schema.Attribute.Decimal;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -464,7 +464,7 @@ export interface ApiLevelLevel extends Struct.CollectionTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::level.level'> &
       Schema.Attribute.Private;
     module: Schema.Attribute.Relation<'manyToOne', 'api::module.module'>;
-    order: Schema.Attribute.Integer;
+    order: Schema.Attribute.Decimal;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
     type: Schema.Attribute.Enumeration<
@@ -500,7 +500,7 @@ export interface ApiModuleModule extends Struct.CollectionTypeSchema {
       'api::module.module'
     > &
       Schema.Attribute.Private;
-    order: Schema.Attribute.Integer;
+    order: Schema.Attribute.Decimal;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;

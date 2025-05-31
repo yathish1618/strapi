@@ -18,7 +18,7 @@
       "type": "text"
     },
     "order": {
-      "type": "integer"
+      "type": "decimal"
     },
     "module": {
       "type": "relation",
